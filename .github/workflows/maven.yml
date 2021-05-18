@@ -22,7 +22,7 @@ jobs:
       - name: Maven Package
         run: mvn -B clean package -DskipTests
       - name: Maven Test
-        run: mvn -B clean test
+        run: mvn -B clean verify
 
   build:
     name: Build
@@ -35,6 +35,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
+      - name: SonarCloud Scan
+        run: mvn -B clean verify -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Cache SonarCloud packages
         uses: actions/cache@v1
         with:
