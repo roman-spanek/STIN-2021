@@ -12,6 +12,7 @@ public class StinToTestImplTest {
     @Test
     public void sumMehodTest() {
         Assertions.assertEquals(stinToTest.sum(10 , 2), 12);
+        Assertions.assertEquals(stinToTest.sum(10 , 3), 13);
     }
 
     @Test
