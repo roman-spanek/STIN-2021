@@ -5,7 +5,7 @@ import cz.tul.roman.spanek.stin.interfaces.IStinCommon;
 public class StinCommonImpl implements IStinCommon {
     @Override
     public void printInfo() {
-        //toto
+
     }
 
     @Override
