@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class StinToTestImplTest {
+
     private StinToTestImpl stinToTest = new StinToTestImpl();;
 
     @Test
