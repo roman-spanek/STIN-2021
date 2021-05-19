@@ -12,4 +12,9 @@ public class SquareImplTest {
     void testSquare(){
         Assert.assertEquals(4, square.square(2));
     }
+
+    @Test
+    void testSquareError(){
+        Assert.assertEquals(5, square.square(2));
+    }
 }
