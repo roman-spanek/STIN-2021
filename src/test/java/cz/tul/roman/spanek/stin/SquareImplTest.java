@@ -15,6 +15,6 @@ public class SquareImplTest {
 
     @Test
     void testSquareError(){
-        Assert.assertEquals(5, square.square(2));
+        Assert.assertEquals( (4 * 4) , square.square(4));
     }
 }
