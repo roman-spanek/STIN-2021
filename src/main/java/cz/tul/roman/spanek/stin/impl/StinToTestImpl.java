@@ -5,6 +5,8 @@ import cz.tul.roman.spanek.stin.interfaces.IStinToTest;
 public class StinToTestImpl implements IStinToTest {
     @Override
     public int sum(int a, int b) {
+
+        //todo
         return a + b;
     }
 }
